@@ -11,7 +11,7 @@ var pool=require('../pool/pool.js');
  Cart.get("/cart",(req,res)=>{ 
     //1:参数(无参数)
     var uid = req.session.uid;
-    console.log(uid+'niha');    //登录后
+    console.log(uid+'niha');    //登录 后
     if(!uid){
       res.send({code:-1,msg:"请先登录！"});
       return;
