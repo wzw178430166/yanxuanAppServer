@@ -5,8 +5,8 @@ const session = require("express-session");
 
 //创建web服务器
 var server=express();
-server.listen(8090);
-
+server.listen(8095);
+console.log("listen:8095");
  //2.3:session
  server.use(session({
 	secret:"128位字符串",
@@ -27,7 +27,7 @@ var pool=mysql.createPool({
 	 port:'3306',
 	 user:'root',
      password:'',
-	 database:'wangyiapp',
+	 database:'haolemaiapp',
 	 connectionLimit:20 //设置连接池的大小
 });
 

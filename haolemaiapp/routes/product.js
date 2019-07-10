@@ -8,6 +8,7 @@ var pool=require('../pool/pool.js');
  product.get("/",(req,res)=>{
     console.log(req.query);
   var lid=req.query.lid;
+  console.log(lid);
   var output={
     products:{},
     specs:[],
@@ -40,6 +41,6 @@ var pool=require('../pool/pool.js');
 })
 
 
-//导出用户路由器对象   /product
+//导出商品详情路由器对象   /product
 module.exports=product;
 
